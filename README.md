@@ -22,4 +22,11 @@
     - type your password
     - create database roundcubemail;
     - create user roundcubemail@<type here the client ip>192.168.1.3 identified by 'password';
-    - grant all privileges on round 
+    - grant all privileges on roundcubemail.* to roundcubemail@192.168.1.3; <type the client ip>
+    - flush privileges;
+
+	
+# On Client 
+
+- yum install -y podman
+- podman pull roundcube/roundcubemail
